@@ -1,7 +1,7 @@
 /* Defaults */
 :root {
-	--font-family: -apple-system, system-ui, sans-serif;
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+	--font-family: "IBM Plex Sans", -apple-system, system-ui, sans-serif;
+	--font-family-monospace: "IBM Plex Mono", Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
 /* Theme colors */
@@ -37,7 +37,7 @@
 
 
 /* Global stylesheet */
-* {
+* {	
 	box-sizing: border-box;
 }
 
@@ -57,7 +57,7 @@ html {
 	overflow-y: scroll;
 }
 body {
-	max-width: 40em;
+	max-width: 34em;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -69,6 +69,15 @@ body {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
+}
+
+.visually-hidden:focus {
+    clip: auto;
+	clip-path: unset;
+    height: auto;
+    overflow: auto;
+    position: absolute;
+    width: auto;
 }
 
 /* Fluid images via https://www.zachleat.com/web/fluid-images/ */
@@ -114,12 +123,19 @@ a[href]:active {
 	color: var(--text-color-link-active);
 }
 
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-family-monospace);
+}
+
 main,
 footer {
 	padding: 1rem;
-}
-main :first-child {
-	margin-top: 0;
 }
 
 header {
@@ -133,6 +149,7 @@ header {
 	list-style: "";
 	border-top: 1px dashed var(--color-gray-20);
 	padding: 1em 0;
+	margin: 2em 0 0;
 }
 .links-nextprev > * {
 	flex-grow: 1;
@@ -151,7 +168,8 @@ table th {
 
 pre,
 code {
-	font-family: var(--font-family-monospace);
+	font-family: var(--font-family-monospace) !important;
+	font-size: 0.875em; /* 14px /16 */
 }
 pre:not([class*="language-"]) {
 	margin: .5em 0;
@@ -184,8 +202,10 @@ header {
 }
 .home-link {
 	flex-grow: 1;
-	font-size: 1em; /* 16px /16 */
-	font-weight: 700;
+	font-size: 1.5em; /* 16px /16 */
+	font-weight: 600;
+	font-style: italic;
+	font-family: var(--font-family-monospace);
 }
 .home-link:link:not(:hover) {
 	text-decoration: none;
@@ -198,6 +218,8 @@ header {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	font-family: var(--font-family-monospace);
+	font-size: 0.875em; /* 14px /16 */
 }
 .nav-item {
 	display: inline-block;
@@ -257,8 +279,8 @@ header {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	text-transform: capitalize;
 	font-style: italic;
+	font-family: var(--font-family-monospace);
 }
 .postlist-item > .post-tag {
 	align-self: center;
@@ -271,9 +293,12 @@ header {
 	gap: .5em;
 	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin: 0 0 1em;
 }
 .post-metadata time {
 	margin-right: 1em;
 }
 
+.post-content {
+	font-family: var(--font-family);
+}

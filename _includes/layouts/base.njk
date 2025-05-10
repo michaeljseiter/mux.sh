@@ -6,9 +6,11 @@
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
-
+  		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
-		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+		<meta name="generator" content="{{ eleventy.generator }}">
 
 		{#-
 		Plain-text bundles are provided via the `eleventy-plugin-bundle` plugin:
@@ -43,7 +45,7 @@
 			<a href="/" class="home-link">{{ metadata.title }}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
+			<nav aria-label="primary">
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
 				{%- for entry in collections.all | eleventyNavigation %}
@@ -59,8 +61,8 @@
 			</heading-anchors>
 		</main>
 
-		<footer>
-			<p><em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em></p>
+		<footer role="contentinfo">
+			<p><em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a> &mdash; Written in the early mornings and late nights.</em></p>
 		</footer>
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
