@@ -1,11 +1,11 @@
 ---
 title: Welcome to mux
-description: ux is a digital workshop — a place for me to build, write, and explore.
+description: ux is a digital workshop where I build, write, and explore.
 date: 2025-04-16
 tags: ["mux"]
 ---
 
-mux is a digital workshop — a space to tinker, build, break things (intentionally), and write about it.
+mux is a digital workshop where I tinker, build, break things (intentionally), and write about it.
 
 Right now, it’s just a modest site powered by [Eleventy](https://www.11ty.dev), but I’ll be using it to:
 - Document what I’m building
@@ -32,7 +32,7 @@ Here’s what’s currently bouncing around in the lab:
 
 ## 🤔 Why “mux”?
 
-It's short for *multiplexing* — sending multiple signals over a single channel.
+It's short for *multiplexing*, which means sending multiple signals over a single channel.
 
 That’s basically what this site is: a single place to broadcast my scattered side projects, thoughts, and tool-building obsessions.
 
@@ -42,8 +42,8 @@ That’s basically what this site is: a single place to broadcast my scattered s
 - Deep dives (when I have the energy)
 - Honest, personal notes about learning and building
 
-If you like dev tools, data, weird CLI stuff, or watching someone nerd out in public — you might enjoy hanging around.
+If you like dev tools, data, weird CLI stuff, or watching someone nerd out in public, you might enjoy hanging around.
 
 Thanks for stopping by.
 
-– Michael  
+– Michael

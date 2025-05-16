@@ -10,15 +10,15 @@ const eleventyNavigation = {
 
 ### Purpose
 
-mux is where I build in the open — a playground for projects, tools, and ideas that help me think out loud and sharpen my craft.
+mux is where I build in the open. It's a playground for projects, tools, and ideas that help me think out loud and sharpen my craft.
 
 Some of these projects are experiments. Others are growing into something bigger… maybe 😅. All of them are fueled by curiosity.
 
 ### Who am I?
 
-I'm Michael J. Seiter — a web developer with a love for well-crafted interfaces and a growing appetite for backend systems.  
+I'm Michael J. Seiter, a web developer with a love for well-crafted interfaces and a passion for exploring both new and classic technologies.  
 
-After years focused on the frontend, I’ve been digging deeper into the stack to understand how the pieces connect — and how to build better systems end to end.
+After years focused on the frontend, I've been digging deeper into the stack to understand how the pieces connect and how to build better systems end to end.
 
 I started mux to document the process of building dev tools, reflect on what I’m learning, and share what sticks.
 
