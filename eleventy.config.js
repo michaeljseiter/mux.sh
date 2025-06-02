@@ -63,11 +63,11 @@ export default async function(eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Blog Title",
-			subtitle: "This is a longer description about your blog.",
-			base: "https://example.com/",
+			title: "Mux",
+			subtitle: "Mux is a developer playground by Michael J. Seiter, showcasing experiments, tools, and blog posts on code, creativity, and the craft of software development.",
+			base: "https://mux.sh/",
 			author: {
-				name: "Your Name"
+				name: "Michael J. Seiter"
 			}
 		}
 	});
